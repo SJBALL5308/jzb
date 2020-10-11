@@ -1,14 +1,9 @@
-@media screen and (width: 1920px) and (height: 1080px) and (orientation: landscape) {
+
   html {
-    transform: rotate(-90deg);
-    transform-origin: left top;
-    width: 100vh;
-    overflow-x: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
+ width: 1920px ;
+ height: 1080px;
   }
-}    
+  
 * {
       box-sizing: border-box;
     }
@@ -36,7 +31,7 @@
     }
 	.a { 
          text-decoration:none; 
-         target :_blank;
+         target: _blank;
     } 
     .dropdown {
       position: relative;
