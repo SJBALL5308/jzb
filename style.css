@@ -22,6 +22,9 @@
 
       
     }
+    .header img{
+      width: 500;
+    }
     aside{
     background-color: #3d5370;
       text-align: right;
