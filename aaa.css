@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+	a { 
+       text-decoration:none; 
+
+ } 
+
+.text01{
+    color: #000000;
+    font-size: 50;
+    font-weight: 900;
+	  text-align: left;
+}
+ั.text02{
+    color: #000000;
+    font-size: 50;
+    font-weight: 400;
+    font-family: Verdana, sans-serif;
+	
+}
+.text03{
+    color: #FF0004;
+	font-size: 80;
+  font-weight: 1000;
+  text-align: right;
+}    
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 40;
+  position: relative;
+  text-align: inherit;
+}
+.alert-link{
+	color: #000000;
+	font-size: 40;
+			}
+
+.textarea {
+  display: block;
+  max-width: 30em;
+  min-width: 35em;
+  padding: calc(0.75em - 1px);
+  resize: vertical;
+}
+
+.textarea:not([rows]) {
+  max-height: 5em;
+  min-height: 10em;
+}
+
+.textarea[rows] {
+  height: initial;
+}
+
+
+
+.text04 {   font-weight: 1000;
+} 
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: center;
+  width: 25%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+	
+	.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 190px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  position: absolute;
+  top: 70%;
+  left: 33%;
+ 
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+<center>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="../imges/Headset/h3.jpg">
+      <img src="../imges/Headset/h3.jpg" alt="Forest" width="600" height="400" alt="image description" title="image tooltip">
+		
+    </a>
+    <div class="desc">HEADSET (หูฟังไร้สาย) SIGNO HP-805 (BLACK-RED)
+
+        </div>
+
+<div class="clearfix"></div>
+<div class="popup" onclick="myFunction()" target="_blank" > <font size="5" >คลิกที่นี้เพื่อเปิดดูรายละเอียด</font>
+  <span class="popuptext" id="myPopup">
+    <font size="5" brcolor="#red"> ราคา350 บาท<br></font>
+    ขั้วต่อ: USB, ขั้วต่อ 3.5 มม. (1/8 นิ้ว) คอมโบเสียง / ไมค์<br>
+    ความต้านทาน: 82 โอห์ม<br>
+    การตอบสนองความถี่ (หูฟัง): หูฟัง: 20-20KHz<br>
+    ไร้สาย: 20Hz – 20,000Hz<br>
+    อะนาล็อก: 15Hz – 25,000Hz <br>
+    ความยาวสายเคเบิล: 2 เมตร<br>
+    
+    
+    รหัสสินค้า : (#8805532279)
+	</span>
+</div>
+  </div>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+<div class="container">
+    <a href="Headset.html">
+    <button class="btn" >Back</button></a>
+  </div>
+  
+	</center>
+</body>
+</html>
